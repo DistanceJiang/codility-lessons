@@ -13,4 +13,4 @@ def solution(A):
     for i in range(len(reference)):
         if i+1 != reference[i]:
             return i+1
-    return len(reference)
+    return len(reference) + 1
