@@ -75,7 +75,7 @@ def solution(N, A):
         elif i == N + 1 and len(counters.values()) != 0:
             max_recorder += max(counters.values())
             counters = {}
-    result = [0 for i in range(N)]
+    result = [0] * N
     for i in range(N):
         if i + 1 in [int(j) for j in counters.keys()]:
             result[i] = counters['{0}'.format(i + 1)] + max_recorder
