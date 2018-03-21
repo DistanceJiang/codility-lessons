@@ -73,3 +73,5 @@ def solution(S, P, Q):
                 result.append(j + 1)
                 break
     return result
+
+# Note: This solution was not initially thought by me. I actually googled this problem, and find this blog(https://rafal.io/posts/codility-genomic-range-query.html) very useful.
