@@ -20,11 +20,9 @@ def solution(A):
             if (p[i + 1] - p[i - 1]) / 2 < min_value:
                 min_idx = i
                 min_value = (p[i + 1] - p[i - 1]) / 2
-                print(min_idx, min_value)
             if i < n - 2 and (p[i + 2] - p[i - 1]) / 3 < min_value:
                 min_idx = i 
                 min_value = (p[i + 2] - p[i - 1]) / 3
-                print(min_idx, min_value)
     return min_idx
 
 def prefix_sums(a):
